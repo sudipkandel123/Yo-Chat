@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		208C74AE305976319863AECE /* Pods_Yo__Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3103C42B9451A57AE6D56F5A /* Pods_Yo__Chat.framework */; };
+		685C4CB121B65F9E00F34EEC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 685C4CB021B65F9E00F34EEC /* SWRevealViewController.m */; };
 		68689F1C21B6543800D804A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689F1B21B6543800D804A1 /* AppDelegate.swift */; };
 		68689F1E21B6543800D804A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689F1D21B6543800D804A1 /* ViewController.swift */; };
 		68689F2121B6543800D804A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68689F1F21B6543800D804A1 /* Main.storyboard */; };
@@ -15,6 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C02353F2EB2A33E000EFFA1 /* Pods-Yo! Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo! Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yo! Chat/Pods-Yo! Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		3103C42B9451A57AE6D56F5A /* Pods_Yo__Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yo__Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		685C4CAE21B65F9D00F34EEC /* Yo! Chat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yo! Chat-Bridging-Header.h"; sourceTree = "<group>"; };
+		685C4CAF21B65F9D00F34EEC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		685C4CB021B65F9E00F34EEC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		68689F1821B6543800D804A1 /* Yo! Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yo! Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68689F1B21B6543800D804A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68689F1D21B6543800D804A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		68689F2221B6543A00D804A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68689F2521B6543A00D804A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68689F2721B6543A00D804A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5C7FE42867DB91662015645 /* Pods-Yo! Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo! Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yo! Chat/Pods-Yo! Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208C74AE305976319863AECE /* Pods_Yo__Chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		685C4CAD21B65F2600F34EEC /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				685C4CAF21B65F9D00F34EEC /* SWRevealViewController.h */,
+				685C4CB021B65F9E00F34EEC /* SWRevealViewController.m */,
+				685C4CAE21B65F9D00F34EEC /* Yo! Chat-Bridging-Header.h */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
 		68689F0F21B6543800D804A1 = {
 			isa = PBXGroup;
 			children = (
 				68689F1A21B6543800D804A1 /* Yo! Chat */,
 				68689F1921B6543800D804A1 /* Products */,
+				91B1B593AD12C80F5C82C42A /* Pods */,
+				B2F67662914256709D7ACEAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +75,7 @@
 		68689F1A21B6543800D804A1 /* Yo! Chat */ = {
 			isa = PBXGroup;
 			children = (
+				685C4CAD21B65F2600F34EEC /* Supporting File */,
 				68689F1B21B6543800D804A1 /* AppDelegate.swift */,
 				68689F1D21B6543800D804A1 /* ViewController.swift */,
 				68689F1F21B6543800D804A1 /* Main.storyboard */,
@@ -64,6 +86,23 @@
 			path = "Yo! Chat";
 			sourceTree = "<group>";
 		};
+		91B1B593AD12C80F5C82C42A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C02353F2EB2A33E000EFFA1 /* Pods-Yo! Chat.debug.xcconfig */,
+				C5C7FE42867DB91662015645 /* Pods-Yo! Chat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2F67662914256709D7ACEAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3103C42B9451A57AE6D56F5A /* Pods_Yo__Chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68689F2A21B6543A00D804A1 /* Build configuration list for PBXNativeTarget "Yo! Chat" */;
 			buildPhases = (
+				64D786034424885FC5F1D7DB /* [CP] Check Pods Manifest.lock */,
 				68689F1421B6543800D804A1 /* Sources */,
 				68689F1521B6543800D804A1 /* Frameworks */,
 				68689F1621B6543800D804A1 /* Resources */,
+				B14AB1006B3E0CAB2242E3F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					68689F1721B6543800D804A1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +172,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64D786034424885FC5F1D7DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yo! Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B14AB1006B3E0CAB2242E3F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yo! Chat/Pods-Yo! Chat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yo! Chat/Pods-Yo! Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68689F1421B6543800D804A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +232,7 @@
 			files = (
 				68689F1E21B6543800D804A1 /* ViewController.swift in Sources */,
 				68689F1C21B6543800D804A1 /* AppDelegate.swift in Sources */,
+				685C4CB121B65F9E00F34EEC /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +376,10 @@
 		};
 		68689F2B21B6543A00D804A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C02353F2EB2A33E000EFFA1 /* Pods-Yo! Chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7427U3PBF;
 				INFOPLIST_FILE = "Yo! Chat/Info.plist";
@@ -291,6 +389,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sudeepasadevelopement.Yo--Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yo! Chat/Supporting File/Yo! Chat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +398,10 @@
 		};
 		68689F2C21B6543A00D804A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C7FE42867DB91662015645 /* Pods-Yo! Chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7427U3PBF;
 				INFOPLIST_FILE = "Yo! Chat/Info.plist";
@@ -309,6 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sudeepasadevelopement.Yo--Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yo! Chat/Supporting File/Yo! Chat-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
