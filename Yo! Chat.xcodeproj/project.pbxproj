@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		208C74AE305976319863AECE /* Pods_Yo__Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3103C42B9451A57AE6D56F5A /* Pods_Yo__Chat.framework */; };
 		685C4CB121B65F9E00F34EEC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 685C4CB021B65F9E00F34EEC /* SWRevealViewController.m */; };
+		685C4CB821B6708F00F34EEC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C4CB721B6708F00F34EEC /* ChatVC.swift */; };
+		685C4CBA21B6709E00F34EEC /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C4CB921B6709E00F34EEC /* ChannelVC.swift */; };
 		68689F1C21B6543800D804A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689F1B21B6543800D804A1 /* AppDelegate.swift */; };
-		68689F1E21B6543800D804A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689F1D21B6543800D804A1 /* ViewController.swift */; };
 		68689F2121B6543800D804A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68689F1F21B6543800D804A1 /* Main.storyboard */; };
 		68689F2321B6543A00D804A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68689F2221B6543A00D804A1 /* Assets.xcassets */; };
 		68689F2621B6543A00D804A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68689F2421B6543A00D804A1 /* LaunchScreen.storyboard */; };
@@ -22,9 +23,10 @@
 		685C4CAE21B65F9D00F34EEC /* Yo! Chat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yo! Chat-Bridging-Header.h"; sourceTree = "<group>"; };
 		685C4CAF21B65F9D00F34EEC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		685C4CB021B65F9E00F34EEC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		685C4CB721B6708F00F34EEC /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		685C4CB921B6709E00F34EEC /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		68689F1821B6543800D804A1 /* Yo! Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yo! Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68689F1B21B6543800D804A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68689F1D21B6543800D804A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68689F2021B6543800D804A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68689F2221B6543A00D804A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68689F2521B6543A00D804A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,36 @@
 			path = "Supporting File";
 			sourceTree = "<group>";
 		};
+		685C4CB221B6618500F34EEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		685C4CB421B6619000F34EEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		685C4CB521B6619300F34EEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				685C4CB721B6708F00F34EEC /* ChatVC.swift */,
+				685C4CB921B6709E00F34EEC /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		685C4CB621B661AD00F34EEC /* Data Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Service";
+			sourceTree = "<group>";
+		};
 		68689F0F21B6543800D804A1 = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +107,12 @@
 		68689F1A21B6543800D804A1 /* Yo! Chat */ = {
 			isa = PBXGroup;
 			children = (
+				685C4CB621B661AD00F34EEC /* Data Service */,
+				685C4CB521B6619300F34EEC /* Controller */,
+				685C4CB421B6619000F34EEC /* View */,
+				685C4CB221B6618500F34EEC /* Model */,
 				685C4CAD21B65F2600F34EEC /* Supporting File */,
 				68689F1B21B6543800D804A1 /* AppDelegate.swift */,
-				68689F1D21B6543800D804A1 /* ViewController.swift */,
 				68689F1F21B6543800D804A1 /* Main.storyboard */,
 				68689F2221B6543A00D804A1 /* Assets.xcassets */,
 				68689F2421B6543A00D804A1 /* LaunchScreen.storyboard */,
@@ -230,7 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68689F1E21B6543800D804A1 /* ViewController.swift in Sources */,
+				685C4CBA21B6709E00F34EEC /* ChannelVC.swift in Sources */,
+				685C4CB821B6708F00F34EEC /* ChatVC.swift in Sources */,
 				68689F1C21B6543800D804A1 /* AppDelegate.swift in Sources */,
 				685C4CB121B65F9E00F34EEC /* SWRevealViewController.m in Sources */,
 			);
