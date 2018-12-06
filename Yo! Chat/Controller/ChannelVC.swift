@@ -9,7 +9,9 @@
 import UIKit
 
 class ChannelVC: UIViewController {
-
+    //Outlets
+    @IBOutlet weak var loginBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeSWview()
@@ -20,5 +22,11 @@ class ChannelVC: UIViewController {
         //in this method the revealViewControllerwidth is set to the size of view frame's width -60
         // ie only except 60 points everything is revealed from the channel view controller
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width-60
+    }
+    
+    //Action
+    @IBAction func loginButtonPressed(_ sender: Any)
+    {
+        performSegue(withIdentifier: GO_TO_LOGIN, sender: nil)
     }
 }
