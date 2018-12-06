@@ -21,5 +21,9 @@ class LoginVC: UIViewController {
     {
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func signupButtonPressed(_ sender: Any)
+    {
+        performSegue(withIdentifier: GO_TO_SIGNUP, sender: nil)
+    }
     
 }

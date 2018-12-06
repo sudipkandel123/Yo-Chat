@@ -11,6 +11,9 @@ import UIKit
 class ChannelVC: UIViewController {
     //Outlets
     @IBOutlet weak var loginBtn: UIButton!
+    //for getting bacck from the signup to the channelvc
+    @IBAction func prepareForUnWind(segue : UIStoryboardSegue){}
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

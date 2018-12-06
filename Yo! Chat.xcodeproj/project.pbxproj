@@ -18,6 +18,7 @@
 		68689F2621B6543A00D804A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68689F2421B6543A00D804A1 /* LaunchScreen.storyboard */; };
 		68B3395E21B921B1003B6A05 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3395D21B921B1003B6A05 /* Constants.swift */; };
 		68B3396121B92D2F003B6A05 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3396021B92D2F003B6A05 /* LoginVC.swift */; };
+		68B3396321B93945003B6A05 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3396221B93945003B6A05 /* SignupVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		68689F2721B6543A00D804A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68B3395D21B921B1003B6A05 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		68B3396021B92D2F003B6A05 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		68B3396221B93945003B6A05 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		C5C7FE42867DB91662015645 /* Pods-Yo! Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo! Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yo! Chat/Pods-Yo! Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				685C4CB721B6708F00F34EEC /* ChatVC.swift */,
 				685C4CB921B6709E00F34EEC /* ChannelVC.swift */,
 				68B3396021B92D2F003B6A05 /* LoginVC.swift */,
+				68B3396221B93945003B6A05 /* SignupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B3396321B93945003B6A05 /* SignupVC.swift in Sources */,
 				685C4CBA21B6709E00F34EEC /* ChannelVC.swift in Sources */,
 				685C4CB821B6708F00F34EEC /* ChatVC.swift in Sources */,
 				68B3396121B92D2F003B6A05 /* LoginVC.swift in Sources */,

@@ -9,3 +9,5 @@
 import Foundation
 //segues  we use caps to denote constants
 let GO_TO_LOGIN = "goToLogin"
+let GO_TO_SIGNUP = "goToSignup"
+let UNWIND = "goToChannelVC"
