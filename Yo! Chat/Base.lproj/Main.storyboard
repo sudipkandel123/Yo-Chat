@@ -180,13 +180,12 @@
         <!--LoginVC-->
         <scene sceneID="GvD-IQ-qFg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sPC-RT-wNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="r9g-Yx-pXi" customClass="LoginVC" customModule="Yo__Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ESi-af-bNM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA0-nE-nGg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA0-nE-nGg" customClass="RoundedButton" customModule="Yo__Chat" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="288" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -197,6 +196,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUx-6t-idH">
                                 <rect key="frame" x="339" y="20" width="28" height="28"/>
@@ -294,6 +298,7 @@
                         <segue destination="DBy-Kf-tdO" kind="show" identifier="goToSignup" id="yVd-Vb-6oc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPC-RT-wNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1420" y="-439.43028485757122"/>
         </scene>
@@ -375,7 +380,7 @@
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvv-Hx-q7a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvv-Hx-q7a" customClass="RoundedButton" customModule="Yo__Chat" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -386,6 +391,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountBtnPressed:" destination="DBy-Kf-tdO" eventType="touchUpInside" id="JEm-YM-0zx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQT-q6-YWb">
                                 <rect key="frame" x="137.5" y="301.5" width="100" height="130"/>
@@ -393,6 +406,9 @@
                                     <constraint firstAttribute="height" constant="130" id="qs1-yV-8vB"/>
                                 </constraints>
                                 <state key="normal" title="Choose avatar"/>
+                                <connections>
+                                    <action selector="chooseAvatarBtnPressed:" destination="DBy-Kf-tdO" eventType="touchUpInside" id="CQj-bY-Ti8"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Glb-N4-b7Y">
                                 <rect key="frame" x="137.5" y="301.5" width="100" height="100"/>
@@ -404,6 +420,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVx-3W-fw6">
                                 <rect key="frame" x="92" y="436.5" width="191" height="30"/>
                                 <state key="normal" title="Generate Background Color"/>
+                                <connections>
+                                    <action selector="generateBColor:" destination="DBy-Kf-tdO" eventType="touchUpInside" id="11A-uJ-aKD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -427,6 +446,10 @@
                         <viewLayoutGuide key="safeArea" id="uXp-HY-3Ro"/>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="XRE-3q-Tg1" id="iOK-it-QVy"/>
+                        <outlet property="passwordText" destination="pvA-jj-frA" id="qqD-cD-fev"/>
+                        <outlet property="userImage" destination="Glb-N4-b7Y" id="LrX-JK-iTz"/>
+                        <outlet property="usernameText" destination="099-lg-iz4" id="1vn-mG-8Dt"/>
                         <segue destination="56W-eJ-7Ye" kind="unwind" identifier="goToChannelVC" unwindAction="prepareForUnWindWithSegue:" id="KPO-DA-gY0"/>
                     </connections>
                 </viewController>

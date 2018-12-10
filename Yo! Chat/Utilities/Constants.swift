@@ -11,3 +11,21 @@ import Foundation
 let GO_TO_LOGIN = "goToLogin"
 let GO_TO_SIGNUP = "goToSignup"
 let UNWIND = "goToChannelVC"
+
+
+typealias CompletionHandler = (_ Success: Bool) -> ()
+
+// URL Constants
+let BASE_URL = "https://yochat245.herokuapp.com/v1/"
+let URL_REGISTER = "\(BASE_URL)account/register"
+let URL_LOGIN = "\(BASE_URL)account/login" //are stored in specific location in api
+
+// User Defaults
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
+let USER_EMAIL = "userEmail"
+
+//Headers
+let HEADER = [
+    "Content-Type": "application/json; charset=utf-8"
+]
