@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class AuthService {
     
@@ -86,16 +87,25 @@ class AuthService {
         { (response) in
             if response.result.error == nil
             {
-                if let json = response.result.value as? Dictionary<String,Any>
-                {
-                    if let email = json["user"] as? String
-                    {
-                        self.userEmail = email //from the AuthService
-                    }
-                    if let token = json["token"] as? String {
-                        self.authToken = token //from the AuthService
-                    }
-                }
+                //USING REGULAR APPROACH
+                
+//                if let json = response.result.value as? Dictionary<String,Any>
+//                {
+//                    if let email = json["user"] as? String
+//                    {
+//                        self.userEmail = email //from the AuthService
+//                    }
+//                    if let token = json["token"] as? String {
+//                        self.authToken = token //from the AuthService
+//                    }
+//                }
+                
+                
+                //Using Swifty JSON
+                guard let data = response.data else{ return }
+                let json = try! JSON(data: data) //force unwrapping can also be safely unwrapped
+                self.userEmail = json["user"].stringValue
+                self.authToken = json["token"].stringValue
                 //once it is successfull then
                 self.isLoggedIn = true //from the AuthService
                 completion(true)
