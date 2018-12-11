@@ -33,7 +33,7 @@ class SignupVC: UIViewController
     
     @IBAction func chooseAvatarBtnPressed(_ sender: Any)
     {
-        
+        performSegue(withIdentifier: GO_TO_AVATAR_PICKER, sender: nil)
         
     }
     @IBAction func generateBColor(_ sender: Any)

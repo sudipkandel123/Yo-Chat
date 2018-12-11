@@ -22,6 +22,8 @@
 		68B3396321B93945003B6A05 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3396221B93945003B6A05 /* SignupVC.swift */; };
 		68C721B621BE6E63009AFAC0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C721B521BE6E62009AFAC0 /* AuthService.swift */; };
 		68C721B821BE6F13009AFAC0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C721B721BE6F13009AFAC0 /* RoundedButton.swift */; };
+		68D0D6CF21BFC1E200055C63 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D0D6CE21BFC1E200055C63 /* AvatarPickerVC.swift */; };
+		68D0D6D121BFD1B900055C63 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D0D6D021BFD1B900055C63 /* AvatarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		68B3396221B93945003B6A05 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		68C721B521BE6E62009AFAC0 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		68C721B721BE6F13009AFAC0 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		68D0D6CE21BFC1E200055C63 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		68D0D6D021BFD1B900055C63 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		C5C7FE42867DB91662015645 /* Pods-Yo! Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo! Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yo! Chat/Pods-Yo! Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,7 @@
 			children = (
 				685C4CBB21B68D6D00F34EEC /* GradientView.swift */,
 				68C721B721BE6F13009AFAC0 /* RoundedButton.swift */,
+				68D0D6D021BFD1B900055C63 /* AvatarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 				685C4CB921B6709E00F34EEC /* ChannelVC.swift */,
 				68B3396021B92D2F003B6A05 /* LoginVC.swift */,
 				68B3396221B93945003B6A05 /* SignupVC.swift */,
+				68D0D6CE21BFC1E200055C63 /* AvatarPickerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B3396321B93945003B6A05 /* SignupVC.swift in Sources */,
+				68D0D6CF21BFC1E200055C63 /* AvatarPickerVC.swift in Sources */,
 				68C721B821BE6F13009AFAC0 /* RoundedButton.swift in Sources */,
 				685C4CBA21B6709E00F34EEC /* ChannelVC.swift in Sources */,
+				68D0D6D121BFD1B900055C63 /* AvatarCell.swift in Sources */,
 				685681C721BFAD9000552F6E /* UserDataService.swift in Sources */,
 				685C4CB821B6708F00F34EEC /* ChatVC.swift in Sources */,
 				68C721B621BE6E63009AFAC0 /* AuthService.swift in Sources */,

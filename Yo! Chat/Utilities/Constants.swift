@@ -11,6 +11,7 @@ import Foundation
 let GO_TO_LOGIN = "goToLogin"
 let GO_TO_SIGNUP = "goToSignup"
 let UNWIND = "goToChannelVC"
+let GO_TO_AVATAR_PICKER = "goToAvatarPicker"
 
 
 typealias CompletionHandler = (_ Success: Bool) -> ()
