@@ -13,6 +13,7 @@
 		685C4CB821B6708F00F34EEC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C4CB721B6708F00F34EEC /* ChatVC.swift */; };
 		685C4CBA21B6709E00F34EEC /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C4CB921B6709E00F34EEC /* ChannelVC.swift */; };
 		685C4CBC21B68D6D00F34EEC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685C4CBB21B68D6D00F34EEC /* GradientView.swift */; };
+		6865CCA021C0E7B900196868 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6865CC9F21C0E7B900196868 /* CircleImage.swift */; };
 		68689F1C21B6543800D804A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68689F1B21B6543800D804A1 /* AppDelegate.swift */; };
 		68689F2121B6543800D804A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68689F1F21B6543800D804A1 /* Main.storyboard */; };
 		68689F2321B6543A00D804A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68689F2221B6543A00D804A1 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		685C4CB721B6708F00F34EEC /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		685C4CB921B6709E00F34EEC /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		685C4CBB21B68D6D00F34EEC /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		6865CC9F21C0E7B900196868 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		68689F1821B6543800D804A1 /* Yo! Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yo! Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68689F1B21B6543800D804A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68689F2021B6543800D804A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				685C4CBB21B68D6D00F34EEC /* GradientView.swift */,
 				68C721B721BE6F13009AFAC0 /* RoundedButton.swift */,
 				68D0D6D021BFD1B900055C63 /* AvatarCell.swift */,
+				6865CC9F21C0E7B900196868 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				68B3396321B93945003B6A05 /* SignupVC.swift in Sources */,
 				68D0D6CF21BFC1E200055C63 /* AvatarPickerVC.swift in Sources */,
 				68C721B821BE6F13009AFAC0 /* RoundedButton.swift in Sources */,
+				6865CCA021C0E7B900196868 /* CircleImage.swift in Sources */,
 				685C4CBA21B6709E00F34EEC /* ChannelVC.swift in Sources */,
 				68D0D6D121BFD1B900055C63 /* AvatarCell.swift in Sources */,
 				685681C721BFAD9000552F6E /* UserDataService.swift in Sources */,

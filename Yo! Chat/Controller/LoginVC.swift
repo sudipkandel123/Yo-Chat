@@ -26,4 +26,5 @@ class LoginVC: UIViewController {
         performSegue(withIdentifier: GO_TO_SIGNUP, sender: nil)
     }
     
+    
 }
