@@ -25,6 +25,8 @@
 		68C721B821BE6F13009AFAC0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C721B721BE6F13009AFAC0 /* RoundedButton.swift */; };
 		68D0D6CF21BFC1E200055C63 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D0D6CE21BFC1E200055C63 /* AvatarPickerVC.swift */; };
 		68D0D6D121BFD1B900055C63 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D0D6D021BFD1B900055C63 /* AvatarCell.swift */; };
+		68F6033C21C39083006C8461 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F6033A21C39083006C8461 /* ProfileVC.swift */; };
+		68F6033D21C39083006C8461 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68F6033B21C39083006C8461 /* ProfileVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		68C721B721BE6F13009AFAC0 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		68D0D6CE21BFC1E200055C63 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		68D0D6D021BFD1B900055C63 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		68F6033A21C39083006C8461 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		68F6033B21C39083006C8461 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		C5C7FE42867DB91662015645 /* Pods-Yo! Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo! Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yo! Chat/Pods-Yo! Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,7 @@
 				68B3396021B92D2F003B6A05 /* LoginVC.swift */,
 				68B3396221B93945003B6A05 /* SignupVC.swift */,
 				68D0D6CE21BFC1E200055C63 /* AvatarPickerVC.swift */,
+				68F6033A21C39083006C8461 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		68689F1A21B6543800D804A1 /* Yo! Chat */ = {
 			isa = PBXGroup;
 			children = (
+				68F6033E21C390BD006C8461 /* XIBs */,
 				68B3395C21B92191003B6A05 /* Utilities */,
 				685C4CB621B661AD00F34EEC /* Data Services */,
 				68C721B921BE736C009AFAC0 /* Model */,
@@ -158,6 +164,14 @@
 			);
 			name = Model;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		68F6033E21C390BD006C8461 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				68F6033B21C39083006C8461 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		91B1B593AD12C80F5C82C42A /* Pods */ = {
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F6033D21C39083006C8461 /* ProfileVC.xib in Resources */,
 				68689F2621B6543A00D804A1 /* LaunchScreen.storyboard in Resources */,
 				68689F2321B6543A00D804A1 /* Assets.xcassets in Resources */,
 				68689F2121B6543800D804A1 /* Main.storyboard in Resources */,
@@ -304,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F6033C21C39083006C8461 /* ProfileVC.swift in Sources */,
 				68B3396321B93945003B6A05 /* SignupVC.swift in Sources */,
 				68D0D6CF21BFC1E200055C63 /* AvatarPickerVC.swift in Sources */,
 				68C721B821BE6F13009AFAC0 /* RoundedButton.swift in Sources */,

@@ -32,7 +32,15 @@ class ChannelVC: UIViewController {
     //Action
     @IBAction func loginButtonPressed(_ sender: Any)
     {
+        if AuthService.instance.isLoggedIn{
+            //show Profile Page from XIB
+            let profile = ProfileVC()
+            profile.modalPresentationStyle = .custom
+            present(profile , animated: true , completion:  nil)
+        }
+        else{
         performSegue(withIdentifier: GO_TO_LOGIN, sender: nil)
+        }
     }
     
     
